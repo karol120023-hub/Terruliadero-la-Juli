@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cafetería | Café y Panadería</title>
+  <meta name="description" content="Disfruta de café, panadería y deliciosos desayunos en nuestra cafetería.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf2;
+      color: #30251e;
+      line-height: 1.6;
+    }
+    header {
+      background: #402719;
+      color: white;
+      text-align: center;
+      padding: 28px 16px;
+    }
+    header h1 { margin: 0; font-size: 32px; }
+    nav { margin-top: 12px; }
+    nav a {
+      color: white;
+      margin: 0 9px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background: #ead5b7;
+    }
+    .hero h2 { font-size: 32px; margin: 0 0 12px; }
+    .hero p { max-width: 500px; margin: 0 auto 22px; }
+    .boton {
+      display: inline-block;
+      background: #684027;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 35px 18px; text-align: center; }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 15px;
+      max-width: 850px;
+      margin: 20px auto 0;
+    }
+    .producto {
+      background: white;
+      padding: 20px 12px;
+      border-radius: 12px;
+      box-shadow: 0 2px 9px #00000012;
+    }
+    .producto .emoji { font-size: 38px; }
+    .producto h3 { margin: 8px 0; }
+    .producto p { margin: 0; color: #705744; }
+    .contacto { background: #f0e2cf; }
+    footer {
+      background: #402719;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☕ Mi Cafetería</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h2>Un buen café mejora tu día</h2>
+      <p>
+        Café recién preparado, panadería deliciosa
+        y el sabor de sentirte como en casa.
+      </p>
+      <a class="boton" href="#menu">Conoce nuestro menú</a>
+    </section>
+
+    <section id="menu">
+      <h2>☕ Nuestro menú</h2>
+      <p>Descubre algunas de nuestras opciones.</p>
+
+      <div class="productos">
+        <article class="producto">
+          <div class="emoji">☕</div>
+          <h3>Tinto y café</h3>
+          <p>El sabor que te acompaña.</p>
+        </article>
+        <article class="producto">
+          <div class="emoji">🥐</div>
+          <h3>Panadería</h3>
+          <p>Frescura para cada momento.</p>
+        </article>
+        <article class="producto">
+          <div class="emoji">🍳</div>
+          <h3>Desayunos</h3>
+          <p>Empieza bien tu mañana.</p>
+        </article>
+        <article class="producto">
+          <div class="emoji">🍲</div>
+          <h3>Almuerzos y caldos</h3>
+          <p>Comida para disfrutar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Visítanos</h2>
+      <p>Será un gusto atenderte.</p>
+      <p>📍 Agrega aquí la dirección de tu negocio.</p>
+      <p>📱 Agrega aquí tu número de contacto.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Mi Cafetería. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
